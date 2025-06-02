@@ -5,13 +5,14 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import './App.css';
+import mePic from './assets/me.png';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <div className="profile-pic-container">
-          <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Profile" className="profile-pic" />
+          <img src={mePic} alt="Profile" className="profile-pic" />
         </div>
         <nav className="navbar">
           <ul>
