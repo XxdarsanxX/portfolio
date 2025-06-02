@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
@@ -10,6 +10,9 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <div className="profile-pic-container">
+          <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Profile" className="profile-pic" />
+        </div>
         <nav className="navbar">
           <ul>
             <li><Link to="/">Home</Link></li>
