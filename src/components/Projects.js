@@ -59,7 +59,7 @@ function Projects() {
     {
       title: 'Bubble Climber',
       videoUrl: 'https://www.youtube.com/embed/oi94_wZ7mlo',
-      imageUrl: 'https://via.placeholder.com/320x180.png?text=Pixel+Game',
+      imageUrl: '',
       description: 'A retro platformer game with pixel art graphics and tight controls. Built with Unity and C#.',
       playUrl: 'https://xxdarsanxx.itch.io/bubble-climber',
       contributions: [
@@ -74,7 +74,7 @@ function Projects() {
       {
       title: 'ubermensch ',
       videoUrl: 'https://www.youtube.com/embed/R7BF-iYuDBc?si=JjU_QEajVI9rxHz5',
-      imageUrl: 'https://via.placeholder.com/320x180.png?text=Pixel+Game',
+      imageUrl: '',
       description: 'A retro platformer game with pixel art graphics and tight controls. Built with Unity and C#.',
       playUrl: 'https://animeadam.itch.io/ubermensch-webgl-by-wormies',
       contributions: [
@@ -87,7 +87,7 @@ function Projects() {
     {
       title: 'Who took my Soggy Cakes',
       videoUrl: 'https://www.youtube.com/embed/tP_s2t7rUSY?si=pHXBJYAqcnXnMgRb',
-      imageUrl: 'https://via.placeholder.com/320x180.png?text=Space+Shooter',
+      imageUrl: '',
       description: 'A Side Scrolling shooter featuring waves of enemies and power-ups. Developed in Godot.',
       playUrl: 'https://xxdarsanxx.itch.io/who-took-my-soggy-cake',
       contributions: [
