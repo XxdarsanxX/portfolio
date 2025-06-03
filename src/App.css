@@ -32,15 +32,17 @@ body {
 
 .navbar-logo {
   margin-left: 32px;
-  margin-right: 24px;
+  margin-right: 32px;
   display: flex;
   align-items: center;
+  border-right: 3px dashed #c9ada7;
+  padding-right: 32px;
 }
 
 .navbar-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
   border: 2px solid #fff;
   background: #eee;
   box-shadow: 2px 2px 0 #9a8c98;
@@ -69,13 +71,25 @@ body {
   background: #22223b;
   border-radius: 0;
   box-shadow: 4px 4px 0 #9a8c98;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
+  position: relative;
+  font-family: 'Press Start 2P', 'VT323', cursive, monospace;
 }
 
-.navbar a:hover {
+.navbar a:hover, .navbar a:focus {
   background: #c9ada7;
   color: #22223b;
   box-shadow: 2px 2px 0 #4a4e69;
+  border: 2px solid #f2e9e4;
+  outline: none;
+}
+
+.navbar a.active {
+  background: #f2e9e4;
+  color: #22223b;
+  border: 2px solid #c9ada7;
+  box-shadow: 0 0 0 3px #c9ada7;
+  z-index: 1;
 }
 
 .content {
