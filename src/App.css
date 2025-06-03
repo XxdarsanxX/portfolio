@@ -19,10 +19,6 @@ body {
   border-bottom: 4px solid #9a8c98;
   padding: 16px 0;
   margin-bottom: 32px;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  width: 100%;
 }
 
 .navbar ul {
@@ -30,7 +26,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 32px;
-  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -139,8 +134,8 @@ button:hover, .pixel-btn:hover {
   left: 32px;
   z-index: 10;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  height: 80px;
 }
 
 .profile-pic {
@@ -154,16 +149,6 @@ button:hover, .pixel-btn:hover {
   object-fit: cover;
 }
 
-.profile-name {
-  margin-top: 12px;
-  text-align: center;
-  font-size: 1.2rem;
-  font-family: 'Press Start 2P', cursive, monospace;
-  color: #f2e9e4;
-  letter-spacing: 1px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
-}
-
 @media (max-width: 600px) {
   .profile-pic {
     width: 96px;
@@ -173,28 +158,5 @@ button:hover, .pixel-btn:hover {
     top: 16px;
     left: 16px;
     height: 48px;
-  }
-}
-
-.sticky-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: #22223b;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-@media (max-width: 600px) {
-  .sticky-header {
-    flex-direction: column;
-    align-items: center;
-  }
-  .navbar {
-    width: 100%;
   }
 }
