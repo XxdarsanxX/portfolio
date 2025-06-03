@@ -5,7 +5,7 @@ function Projects() {
   const projects = [
     {
       title: 'Audience Controlled Vehicle',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      videoUrl: 'https://www.youtube.com/embed/oJ0hzasWpqg',
       imageUrl: '',
       description: 'A vehicle controlled by audience input in real time.',
       playUrl: '',
@@ -92,9 +92,9 @@ function Projects() {
     },
     {
       title: 'Evil Mage',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      videoUrl: 'https://www.youtube.com/embed/WQRQaBH0afg',
       imageUrl: '',
-      description: 'A puzzle adventure game with unique mechanics and charming pixel visuals. Made with Phaser.',
+      description: 'A platformer game originally made in LibGdx and as part of my final year project I made the same game on Unity and Godot then compared the performance of the two.',
       playUrl: '',
       contributions: [
         'Designed puzzle levels',
