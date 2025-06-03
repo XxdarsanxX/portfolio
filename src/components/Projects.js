@@ -25,20 +25,22 @@ function Projects() {
         'Designed and implemented a custom thread pool with task stealing for optimal multi-core utilization',
         'Developed support for three rigid body types: spheres, cylinders, and boxes',
         'Implemented all collision detection, response, and integration logic using only DirectXMath and DirectX 12 libraries',
-        'Engine efficiently simulates up to 10,000 objects in real time',
-        'Created a user interface for simulation control and visualization'
+        'Engine efficiently simulates up to 10,000 physics objects in real time',
+        'Created a user interface for simulation control and visualization',
+        'this was a solo project so i did everything'
       ]
     },  
     {
       title: 'I Died and Got Reincarnated as a Skeleton to Stop My Wife from Marrying the Guy Who Killed Me to finally get my Lived Happily Ever After',
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       imageUrl: 'https://via.placeholder.com/320x180.png?text=Pixel+Game',
-      description: 'A retro platformer game with pixel art graphics and tight controls. Built with Unity and C#.',
+      description: '3d stealth game made in Unity',
       playUrl: 'https://itch.io/',
       contributions: [
         'Designed and animated all pixel art sprites',
         'Implemented player movement and physics',
-        'Developed level editor and game logic'
+        'Developed level editor and game logic',
+        'this was a solo project so i did everything'
       ]
     }, 
     {
@@ -50,7 +52,8 @@ function Projects() {
       contributions: [
         'Designed and animated all pixel art sprites',
         'Implemented player movement and physics',
-        'Developed level editor and game logic'
+        'Developed level editor and game logic',
+        'this was a solo project so i did everything'
       ]
     },
     {
@@ -62,7 +65,9 @@ function Projects() {
       contributions: [
         'Designed and animated all pixel art sprites',
         'Implemented player movement and physics',
-        'Developed level editor and game logic'
+        'Developed level editor and game logic',
+        'Made the game mechanics',
+        'this was a solo project so i did everything' 
       ]
     },
  
@@ -73,21 +78,26 @@ function Projects() {
       description: 'A retro platformer game with pixel art graphics and tight controls. Built with Unity and C#.',
       playUrl: 'https://animeadam.itch.io/ubermensch-webgl-by-wormies',
       contributions: [
-        'Designed and animated all pixel art sprites',
-        'Implemented player movement and physics',
-        'Developed level editor and game logic'
+        'animated all the characters',
+        'Implemented player movement',
+        'Developed parts of the Ai logic for the enemies',
+        'Designed Game Mechanics'
       ]
     },
     {
       title: 'Who took my Soggy Cakes',
       videoUrl: 'https://www.youtube.com/embed/tP_s2t7rUSY?si=pHXBJYAqcnXnMgRb',
       imageUrl: 'https://via.placeholder.com/320x180.png?text=Space+Shooter',
-      description: 'A top-down space shooter featuring waves of enemies and power-ups. Developed in Godot.',
-      playUrl: '',
+      description: 'A Side Scrolling shooter featuring waves of enemies and power-ups. Developed in Godot.',
+      playUrl: 'https://xxdarsanxx.itch.io/who-took-my-soggy-cake',
       contributions: [
         'Created enemy AI and wave system',
         'Programmed power-up mechanics',
-        'Composed original chiptune soundtrack'
+        'made all art assets',
+        'made a cool Boss at the end of the game', 
+        'Made funny dialogue and story',
+        'Game engines/Frameworks used - Godot',
+        'this was a solo project so i did everything'
       ]
     },
     {
@@ -95,11 +105,16 @@ function Projects() {
       videoUrl: 'https://www.youtube.com/embed/WQRQaBH0afg',
       imageUrl: '',
       description: 'A platformer game originally made in LibGdx and as part of my final year project I made the same game on Unity and Godot then compared the performance of the two.',
-      playUrl: '',
+      playUrl: 'https://github.com/XxdarsanxX/unity-evil-mage.git',
       contributions: [
-        'Designed puzzle levels',
-        'Implemented spell-casting system',
-        'Wrote dialogue and story scripts'
+        'Designed level',
+        'Basic platformer mechanics',
+        'Basic enemy AI',
+        'Save and Load System',
+        'Basic UI',
+        'made all art assets',
+        'Game engines/Frameworks used - Godot and Unity and LibGdx',
+        'this was a solo project so i did everything'
       ]
     }
   ];
