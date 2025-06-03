@@ -15,10 +15,15 @@ body {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   background: #4a4e69;
   border-bottom: 4px solid #9a8c98;
   padding: 16px 0;
-  margin-bottom: 32px;
+  margin-bottom: 0;
+  z-index: 99;
 }
 
 .navbar ul {
@@ -60,6 +65,8 @@ body {
   box-shadow: 8px 8px 0 #9a8c98;
   padding: 32px;
   border-radius: 0;
+  margin-top: 120px;
+  margin-left: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -129,10 +136,10 @@ button:hover, .pixel-btn:hover {
 }
 
 .profile-pic-container {
-  position: absolute;
+  position: fixed;
   top: 32px;
   left: 32px;
-  z-index: 10;
+  z-index: 100;
   display: flex;
   align-items: center;
   height: 80px;
@@ -158,5 +165,8 @@ button:hover, .pixel-btn:hover {
     top: 16px;
     left: 16px;
     height: 48px;
+  }
+  .content {
+    margin-top: 96px;
   }
 }
