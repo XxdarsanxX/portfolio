@@ -3,7 +3,18 @@ import ProjectCard from './ProjectCard';
 
 function Projects() {
   const projects = [
-    
+    {
+      title: 'Audience Controlled Vehicle',
+      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      imageUrl: '',
+      description: 'A vehicle controlled by audience input in real time.',
+      playUrl: '',
+      contributions: [
+        'Developed real-time audience input system',
+        'Integrated video streaming and vehicle control',
+        'Designed interactive UI for audience participation'
+      ]
+    },
     {
       title: 'Physics Simulation Engine',
       videoUrl: '',
@@ -17,7 +28,7 @@ function Projects() {
         'Engine efficiently simulates up to 10,000 objects in real time',
         'Created a user interface for simulation control and visualization'
       ]
-    },
+    },  
     {
       title: 'I Died and Got Reincarnated as a Skeleton to Stop My Wife from Marrying the Guy Who Killed Me to finally get my Lived Happily Ever After',
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -31,7 +42,7 @@ function Projects() {
       ]
     }, 
     {
-      title: 'Penguin 3d Platformer Game DirectX 11',
+      title: 'Penguin 3d Platformer DirectX 11',
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       imageUrl: 'https://via.placeholder.com/320x180.png?text=Pixel+Game',
       description: 'A retro platformer game with pixel art graphics and tight controls. Built with Unity and C#.',
@@ -69,7 +80,7 @@ function Projects() {
     },
     {
       title: 'Who took my Soggy Cakes',
-      videoUrl: '',
+      videoUrl: 'https://www.youtube.com/embed/tP_s2t7rUSY?si=pHXBJYAqcnXnMgRb',
       imageUrl: 'https://via.placeholder.com/320x180.png?text=Space+Shooter',
       description: 'A top-down space shooter featuring waves of enemies and power-ups. Developed in Godot.',
       playUrl: '',

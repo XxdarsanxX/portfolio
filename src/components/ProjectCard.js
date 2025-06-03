@@ -1,10 +1,18 @@
 import React from 'react';
 
-function ProjectCard({ title, videoUrl, imageUrl, description, playUrl, contributions }) {
+function ProjectCard({ title, videoUrl, videoFile, imageUrl, description, playUrl, contributions }) {
   return (
     <div className="project-card">
       <h2>{title}</h2>
-      {videoUrl && (
+      {videoFile && (
+        <div className="project-video">
+          <video width="480" height="270" controls>
+            <source src={videoFile} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
+      {!videoFile && videoUrl && (
         <div className="project-video">
           <iframe
             width="480"

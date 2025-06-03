@@ -11,17 +11,22 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="profile-pic-container">
-          <img src={mePic} alt="Profile" className="profile-pic" />
+        <div className="sticky-header">
+          <nav className="navbar">
+            <ul>
+              <li className="profile-menu-item">
+                <div className="profile-pic-container">
+                  <img src={mePic} alt="Profile" className="profile-pic" />
+                  <div className="profile-name">Darsan Jalal</div>
+                </div>
+              </li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/projects">Projects</Link></li>
+              <li><Link to="/skills">Skills</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+            </ul>
+          </nav>
         </div>
-        <nav className="navbar">
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/skills">Skills</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </nav>
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
