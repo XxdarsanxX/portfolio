@@ -1,9 +1,22 @@
 import React from 'react';
 
-function ProjectCard({ title, videoUrl, videoFile, imageUrl, description, playUrl, contributions }) {
+function ProjectCard({ title, videoUrl, videoFile, imageUrl, description, playUrl, contributions, techStack, keyFeatures }) {
+  // Merge keyFeatures into contributions for consistent display
+  const allContributions = [
+    ...(keyFeatures || []),
+    ...(contributions || [])
+  ];
+
   return (
     <div className="project-card">
       <h2>{title}</h2>
+      {techStack && techStack.length > 0 && (
+        <div className="project-techstack">
+          {techStack.map((tech, idx) => (
+            <span className="tech-badge" key={idx}>{tech}</span>
+          ))}
+        </div>
+      )}
       {videoFile && (
         <div className="project-video">
           <video width="480" height="270" controls>
@@ -25,17 +38,12 @@ function ProjectCard({ title, videoUrl, videoFile, imageUrl, description, playUr
           ></iframe>
         </div>
       )}
-      {imageUrl && (
-        <div className="project-image">
-          <img src={imageUrl} alt={title + ' screenshot'} width="320" style={{ imageRendering: 'pixelated' }} />
-        </div>
-      )}
       <p>{description}</p>
-      {contributions && contributions.length > 0 && (
+      {allContributions.length > 0 && (
         <div className="project-contributions">
           <strong>My Contributions:</strong>
           <ul>
-            {contributions.map((item, idx) => (
+            {allContributions.map((item, idx) => (
               <li key={idx}>{item}</li>
             ))}
           </ul>

@@ -6,15 +6,16 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import './App.css';
 import mePic from './assets/me1.png';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <div className="profile-pic-container">
-          <img src={mePic} alt="Profile" className="profile-pic" />
-        </div>
         <nav className="navbar">
+          <div className="navbar-logo">
+            <img src={mePic} alt="Logo" className="navbar-avatar" />
+          </div>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/projects">Projects</Link></li>
@@ -30,6 +31,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </Router>
   );
