@@ -45,8 +45,8 @@ function Projects() {
     }, 
     {
       title: 'Penguin 3d Platformer DirectX 11',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      imageUrl: 'https://via.placeholder.com/320x180.png?text=Pixel+Game',
+      videoUrl: 'https://youtu.be/Vn0nxZoSxbQ',
+      imageUrl: '',
       description: 'A retro platformer game with pixel art graphics and tight controls. Built with Unity and C#.',
       playUrl: 'https://itch.io/',
       contributions: [
