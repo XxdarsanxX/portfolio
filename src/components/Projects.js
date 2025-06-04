@@ -25,10 +25,10 @@ function Projects() {
     {
       title: 'Physics Simulation Engine',
       videoUrl: 'https://www.youtube.com/embed/v=LdzJch3SuWQ',
-      imageUrl: 'https://via.placeholder.com/320x180.png?text=Physics+Engine',
+      imageUrl: '',
       description: 'A high-performance physics simulation engine built from scratch in C++ for real-time applications. Designed to efficiently handle up to 10,000 objects with multi-threaded processing.',
       playUrl: '',
-      techStack: ['C++', 'DirectX 12', 'DirectXMath', 'Multithreading'],
+      techStack: ['C++', 'DirectX 12', 'DirectXMath'],
       contributions: [
         'Designed and implemented a custom thread pool with task stealing for optimal multi-core utilization',
         'Developed support for three rigid body types: spheres, cylinders, and boxes',
