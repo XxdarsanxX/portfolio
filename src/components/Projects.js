@@ -24,19 +24,31 @@ function Projects() {
     },
     {
       title: 'Physics Simulation Engine',
-      videoUrl: 'https://www.youtube.com/embed/v=LdzJch3SuWQ',
+      videoUrl: 'https://www.youtube.com/embed/LdzJch3SuWQ',
       imageUrl: '',
-      description: 'A high-performance physics simulation engine built from scratch in C++ for real-time applications. Designed to efficiently handle up to 10,000 objects with multi-threaded processing.',
+      description: 'A high-performance, real-time physics simulation engine built from scratch in C++ using DirectX 12 and DirectXMath. Supports advanced collision handling, full 3D rigid body dynamics, and distributed simulation with up to 4 peers.',
       playUrl: '',
-      techStack: ['C++', 'DirectX 12', 'DirectXMath'],
+      techStack: ['C++', 'DirectX 12', 'DirectXMath', 'WinSock2', 'ImGui'],
+      keyFeatures: [
+        'Multi-threaded Physics Simulation',
+        'SAT-Based Collision Detection & Response',
+        'Sphere, Box, and Capsule Rigid Bodies',
+        'Full 3D Rotation and Material System',
+        'User Interface with Debug Metrics',
+        'Scenario Control (Pause, Reverse, Gravity Toggle)',
+        'Spatial Segmentation (O(n·k/t) Optimized)',
+        'Networked Peer Synchronization (4 Peers)'
+      ],
       contributions: [
-        'Designed and implemented a custom thread pool with task stealing for optimal multi-core utilization',
-        'Developed support for three rigid body types: spheres, cylinders, and boxes',
-        'Implemented all collision detection, response, and integration logic using only DirectXMath and DirectX 12 libraries',
-        'Engine efficiently simulates up to 10,000 physics objects in real time',
-        'Created a user interface for simulation control and visualization',
-        'this was a solo project so i did everything'
+        'Implemented a custom thread pool with task stealing, mapped to specific cores for optimal multi-core utilization',
+        'Reduced simulation complexity from O(n²) to O(n·k/t) via spatial segmentation and threading',
+        'Developed full 3D SAT-based collision detection and response for spheres, boxes, and cylinders',
+        'Built a networked simulation layer supporting up to 4 peers with synchronization and correction',
+        'Created a flexible scenario system with controls for gravity, pause/resume, and playback reversal',
+        'Designed a debug UI using ImGui to display simulation stats and runtime control',
+        'Handled all architecture, systems, and implementation independently as a solo developer'
       ]
+    
     },  
     {
       title: 'I Died and Got Reincarnated as a Skeleton to Stop My Wife from Marrying the Guy Who Killed Me to finally get my Lived Happily Ever After',
@@ -49,16 +61,15 @@ function Projects() {
         'Designed and animated all pixel art sprites',
         'Implemented player movement and physics',
         'Developed level editor and game logic',
-        'this was a solo project so i did everything'
       ]
     }, 
     {
-      title: 'Penguin 2.5d Platformer DirectX 11',
+      title: 'Penguin 2.5D Platformer DirectX 11',
       videoUrl: 'https://www.youtube.com/embed/Vn0nxZoSxbQ',
       imageUrl: 'https://via.placeholder.com/320x180.png?text=Penguin+Platformer',
       description: 'A 2.5D platformer demo built in C++ and DirectX 11, featuring multi-layered scenes, custom OBJ model loading, advanced shading and lighting, particle effects, and a camera system that follows the player. Developed to demonstrate real-time graphics and game programming techniques for university assessment.',
       playUrl: 'https://itch.io/',
-      techStack: ['Unity', 'C#', 'DirectX 11', 'Pixel Art'],
+      techStack: [ 'DirectX 11','C++','ImGUI'],
       keyFeatures: [
         'Multi-layered 2.5D platformer with custom OBJ model loader',
         'Advanced real-time graphics: Phong & Gouraud shading, bump/displacement/roughness/AO mapping',
@@ -70,9 +81,6 @@ function Projects() {
         'All required controls and gameplay mechanics implemented'
       ],
       contributions: [
-        'Designed and animated all pixel art sprites',
-        'Implemented player movement and physics',
-        'Developed level editor and game logic',
         'this was a solo project so i did everything'
       ]
     },
@@ -83,11 +91,8 @@ function Projects() {
       description: 'A retro platformer game with pixel art graphics and tight controls. Built with Unity and C#.',
       playUrl: 'https://xxdarsanxx.itch.io/bubble-climber',
       techStack: ['Godot', 'GDScript', 'Pixel Art'],
+      keyFeatures: ['Randomly Spawned Bubbles', 'Randomly Spawned Enemies', 'Randomly Spawned Obstacles', 'Randomly Spawned Items', 'Randomly Spawned Enemies', 'Randomly Spawned Power-Ups', 'Randomly Spawned Obstacles','Difficulty Increases as the game progresses','Score System','2D Platformer','Bouncing Physics'],
       contributions: [
-        'Designed and animated all pixel art sprites',
-        'Implemented player movement and physics',
-        'Developed level editor and game logic',
-        'Made the game mechanics',
         'this was a solo project so i did everything' 
       ]
     },
@@ -99,10 +104,11 @@ function Projects() {
       playUrl: 'https://animeadam.itch.io/ubermensch-webgl-by-wormies',
       techStack: ['Unity', 'C#', 'Pixel Art', 'AI'],
       contributions: [
-        'animated all the characters',
-        'Implemented player movement',
+        'Tied Logic of the Ai and the Player to the Animation',
+        'Implemented player movement and Part of the Ai movement',
         'Developed parts of the Ai logic for the enemies',
-        'Designed Game Mechanics'
+        'Designed Game Mechanics',
+        'created parts of the Art'
       ]
     },
     {
