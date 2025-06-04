@@ -53,7 +53,7 @@ function Projects() {
       ]
     }, 
     {
-      title: 'Penguin 3d Platformer DirectX 11',
+      title: 'Penguin 2.5d Platformer DirectX 11',
       videoUrl: 'https://www.youtube.com/embed/Vn0nxZoSxbQ',
       imageUrl: 'https://via.placeholder.com/320x180.png?text=Penguin+Platformer',
       description: 'A 2.5D platformer demo built in C++ and DirectX 11, featuring multi-layered scenes, custom OBJ model loading, advanced shading and lighting, particle effects, and a camera system that follows the player. Developed to demonstrate real-time graphics and game programming techniques for university assessment.',
