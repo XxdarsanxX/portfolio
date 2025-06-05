@@ -133,7 +133,7 @@ function Projects() {
       videoUrl: 'https://www.youtube.com/embed/WQRQaBH0afg',
       imageUrl: 'https://via.placeholder.com/320x180.png?text=Evil+Mage',
       description: 'A platformer game originally made in LibGdx and as part of my final year project I made the same game on Unity and Godot then compared the performance of the two.',
-      playUrl: 'https://github.com/XxdarsanxX/unity-evil-mage.git',
+      playUrl: 'https://github.com/XxdarsanxX/Mage-game-2d-libgdx',
       techStack: ['LibGDX', 'Unity', 'Godot', 'Java', 'C#', 'GDScript'],
       contributions: [
         'Designed level',
