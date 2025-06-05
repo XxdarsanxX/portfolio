@@ -31,16 +31,16 @@ function Projects() {
       techStack: ['C++', 'DirectX 12', 'DirectXMath', 'WinSock2', 'ImGui'],
       keyFeatures: [
         'Multi-threaded Physics Simulation',
-        'SAT-Based Collision Detection & Response',
-        'Sphere, Box, and Capsule Rigid Bodies',
+        'SAT-Based Collision Detection with realistic Response',
+        'Sphere, Box, and cylinder Rigid Bodies',
         'Full 3D Rotation and Material System',
         'User Interface with Debug Metrics',
         'Scenario Control (Pause, Reverse, Gravity Toggle)',
         'Spatial Segmentation (O(n·k/t) Optimized)',
-        'Networked Peer Synchronization (4 Peers)'
+        'localNetworked Peer Synchronization (4 Peers)'
       ],
       contributions: [
-        'Implemented a custom thread pool with task stealing, mapped to specific cores for optimal multi-core utilization',
+        'Implemented a custom thread pool with task stealing, mapped to specific cores for optimal multi-core utilization. also used task batching to reduce the busying worker threads with smaller tasks',
         'Reduced simulation complexity from O(n²) to O(n·k/t) via spatial segmentation and threading',
         'Developed full 3D SAT-based collision detection and response for spheres, boxes, and cylinders',
         'Built a networked simulation layer supporting up to 4 peers with synchronization and correction',
