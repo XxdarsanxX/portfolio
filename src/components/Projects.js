@@ -50,7 +50,7 @@ function Projects() {
       ]
     
     },  
-    {
+   /* {
       title: 'I Died and Got Reincarnated as a Skeleton to Stop My Wife from Marrying the Guy Who Killed Me to finally get my Lived Happily Ever After',
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       imageUrl: 'https://via.placeholder.com/320x180.png?text=Pixel+Game',
@@ -62,13 +62,13 @@ function Projects() {
         'Implemented player movement and physics',
         'Developed level editor and game logic',
       ]
-    }, 
+    }, */
     {
       title: 'Penguin 2.5D Platformer DirectX 11',
       videoUrl: 'https://www.youtube.com/embed/Vn0nxZoSxbQ',
-      imageUrl: 'https://via.placeholder.com/320x180.png?text=Penguin+Platformer',
+      imageUrl: '',
       description: 'A 2.5D platformer demo built in C++ and DirectX 11, featuring multi-layered scenes, custom OBJ model loading, advanced shading and lighting, particle effects, and a camera system that follows the player. Developed to demonstrate real-time graphics and game programming techniques for university assessment.',
-      playUrl: 'https://itch.io/',
+      playUrl: 'https://github.com/XxdarsanxX/PenguinDirectX_11',
       techStack: [ 'DirectX 11','C++','ImGUI'],
       keyFeatures: [
         'Multi-layered 2.5D platformer with custom OBJ model loader',
