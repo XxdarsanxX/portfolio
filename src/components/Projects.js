@@ -27,7 +27,7 @@ function Projects() {
       videoUrl: 'https://www.youtube.com/embed/LdzJch3SuWQ',
       imageUrl: '',
       description: 'A high-performance, real-time physics simulation engine built from scratch in C++ using DirectX 12 and DirectXMath. Supports advanced collision handling, full 3D rigid body dynamics, and distributed simulation with up to 4 peers.',
-      playUrl: '',
+      playUrl: 'https://github.com/XxdarsanxX/sim_Final_Lab/',
       techStack: ['C++', 'DirectX 12', 'DirectXMath', 'WinSock2', 'ImGui'],
       keyFeatures: [
         'Multi-threaded Physics Simulation',
