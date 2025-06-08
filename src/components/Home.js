@@ -18,7 +18,7 @@ function Home() {
           </div>
           <div className="about-text">
             <h1>About Me</h1>
-            <p><strong>Hi, I'm [Darsan Jalal]!</strong></p>
+            <p><strong>Hi, I'm Darsan Jalal!</strong></p>
             <p>
               Dedicated programmer with over 8 years of experience in studying and working with computer technologies. With a proven passion for Games and Programming by jumping at any chance I got, I participated in numerous Games and Game Development projects throughout my education and career. Currently, I am seeking to show my skills and my abilities on a project where I can push and improve myself.
             </p>

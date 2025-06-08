@@ -1,13 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
+/* === PIXEL ART RETRO PALETTE === */
+
+/* === PIXEL ART RETRO PALETTE === */
+/*
+:root {
+  --bg-main: #1a1a1a;       
+  --surface: #2a2a2a;        
+  
+  --primary: #ffd700;        
+  --secondary: #00d4ff;     
+  --accent: #ff6b9d;        
+  
+  --border: #404040;         
+  --text: #00ff88;           
+  --highlight: #ffaa00;    
+  
+  --text-muted: #66cc77;     
+  --success: #00ff00;       
+  --warning: #ffaa00;       
+  --error: #ff3333;         
+}
+*/
+/* Alternative palettes - uncomment to use */
+
+/* WARM AMBER PALETTE */
+/*
+:root {
+  --bg-main: #0f0f0f;        
+  --surface: #1f1f1f;        
+  --primary: #ff9500;        
+  --secondary: #ff6b00;      
+  --accent: #ffcc00;         
+  --border: #333333;         
+  --text: #ffcc88;          
+  --highlight: #ff4400;      
+  --text-muted: #cc9966;     
+  --success: #00ff00;        
+  --warning: #ffaa00;        
+  --error: #ff3333;          
+}
+*/
+
+:root {
+  --bg-main: #0a0a0f;        
+  --surface: #151520;        
+  --primary: #00ffff;        
+  --secondary: #0099ff;      
+  --accent: #530488;         
+  --border: #2a2a40;         
+  --text: #88ddff;           
+  --highlight: #ff0099;      
+  --text-muted: #6699cc;     
+  --success: #00ff00;        
+  --warning: #ffaa00;        
+  --error: #ff3333;          
+}
+
+
 /* Base styles */
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #22223b;
-  color: #f2e9e4;
+  background: var(--bg-main);
+  color: var(--text);
   font-family: 'VT323', 'Press Start 2P', cursive, monospace;
   margin: 0;
   padding: 0;
@@ -17,7 +75,7 @@ body {
 .App {
   text-align: center;
   min-height: 100vh;
-  background: #22223b;
+  background: var(--bg-main);
   font-family: 'VT323', 'Press Start 2P', cursive, monospace;
 }
 
@@ -27,21 +85,21 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: #4a4e69;
-  border-bottom: 4px solid #9a8c98;
+  background: var(--surface);
+  border-bottom: 4px solid var(--primary);
   padding: 8px 0;
   z-index: 99;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 16px rgba(34,34,59,0.15);
+  box-shadow: 0 4px 16px rgba(35,39,46,0.15);
 }
 
 .navbar-logo {
   margin: 8px 16px;
   display: flex;
   align-items: center;
-  border-bottom: 2px dashed #c9ada7;
+  border-bottom: 2px dashed var(--secondary);
   padding-bottom: 8px;
   width: 100%;
   justify-content: center;
@@ -51,9 +109,9 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 8px;
-  border: 2px solid #fff;
+  border: 2px solid var(--primary);
   background: #eee;
-  box-shadow: 2px 2px 0 #9a8c98;
+  box-shadow: 2px 2px 0 var(--border);
   image-rendering: pixelated;
 }
 
@@ -73,14 +131,14 @@ body {
 }
 
 .navbar a {
-  color: #f2e9e4;
+  color: var(--text);
   text-decoration: none;
   font-size: 0.8rem;
   padding: 8px 12px;
-  border: 2px solid #9a8c98;
-  background: #22223b;
+  border: 2px solid var(--secondary);
+  background: var(--bg-main);
   border-radius: 0;
-  box-shadow: 2px 2px 0 #9a8c98;
+  box-shadow: 2px 2px 0 var(--border);
   transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
   position: relative;
   font-family: 'Press Start 2P', 'VT323', cursive, monospace;
@@ -89,18 +147,18 @@ body {
 }
 
 .navbar a:hover, .navbar a:focus {
-  background: #c9ada7;
-  color: #22223b;
-  box-shadow: 1px 1px 0 #4a4e69;
-  border: 2px solid #f2e9e4;
+  background: var(--primary);
+  color: var(--bg-main);
+  box-shadow: 1px 1px 0 var(--surface);
+  border: 2px solid var(--highlight);
   outline: none;
 }
 
 .navbar a.active {
-  background: #f2e9e4;
-  color: #22223b;
-  border: 2px solid #c9ada7;
-  box-shadow: 0 0 0 2px #c9ada7;
+  background: var(--highlight);
+  color: var(--bg-main);
+  border: 2px solid var(--primary);
+  box-shadow: 0 0 0 2px var(--primary);
   z-index: 1;
 }
 
@@ -108,9 +166,9 @@ body {
 .content {
   max-width: 1000px;
   margin: 0 auto;
-  background: #4a4e69;
-  border: 2px solid #9a8c98;
-  box-shadow: 4px 4px 0 #9a8c98;
+  background: var(--surface);
+  border: 2px solid var(--primary);
+  box-shadow: 4px 4px 0 var(--border);
   padding: 16px;
   border-radius: 0;
   margin-top: 100px;
@@ -120,7 +178,7 @@ body {
 /* Typography responsive */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Press Start 2P', cursive, monospace;
-  color: #f2e9e4;
+  color: var(--primary);
   margin-top: 0;
   line-height: 1.4;
   word-wrap: break-word;
@@ -133,10 +191,10 @@ h3 { font-size: 1rem; }
 /* Buttons */
 button, .pixel-btn {
   font-family: 'Press Start 2P', cursive, monospace;
-  background: #c9ada7;
-  color: #22223b;
-  border: 2px solid #9a8c98;
-  box-shadow: 2px 2px 0 #9a8c98;
+  background: var(--highlight);
+  color: var(--bg-main);
+  border: 2px solid var(--primary);
+  box-shadow: 2px 2px 0 var(--border);
   padding: 6px 16px;
   border-radius: 0;
   cursor: pointer;
@@ -147,16 +205,16 @@ button, .pixel-btn {
 }
 
 button:hover, .pixel-btn:hover {
-  background: #f2e9e4;
-  color: #22223b;
-  box-shadow: 1px 1px 0 #4a4e69;
+  background: var(--primary);
+  color: var(--bg-main);
+  box-shadow: 1px 1px 0 var(--surface);
 }
 
 /* Project cards */
 .project-card {
-  background: linear-gradient(135deg, #22223b 60%, #c9ada7 100%);
-  border: 2px solid #9a8c98;
-  box-shadow: 3px 3px 0 #9a8c98;
+  background: linear-gradient(135deg, var(--bg-main) 60%, var(--accent) 100%);
+  border: 2px solid var(--primary);
+  box-shadow: 3px 3px 0 var(--border);
   margin: 16px auto;
   padding: 16px;
   max-width: 100%;
@@ -176,23 +234,23 @@ button:hover, .pixel-btn:hover {
   left: 0;
   width: 100%;
   height: 6px;
-  background: linear-gradient(90deg, #f2e9e4 0%, #c9ada7 50%, #4a4e69 100%);
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
 }
 
 .project-card:hover {
-  box-shadow: 0 0 16px 4px #c9ada7, 6px 6px 0 #9a8c98;
+  box-shadow: 0 0 16px 4px var(--accent), 6px 6px 0 var(--border);
   transform: translateY(-4px);
-  border-color: #f2e9e4;
+  border-color: var(--highlight);
   z-index: 2;
 }
 
 .project-card:active {
   transform: scale(0.98);
-  box-shadow: 0 0 4px 1px #c9ada7, 2px 2px 0 #9a8c98;
+  box-shadow: 0 0 4px 1px var(--accent), 2px 2px 0 var(--border);
 }
 
 .project-card h2 {
-  color: #f2e9e4;
+  color: var(--primary);
   font-size: 1.2rem;
   margin-bottom: 12px;
   font-family: 'Press Start 2P', 'VT323', cursive, monospace;
@@ -202,7 +260,7 @@ button:hover, .pixel-btn:hover {
 
 .project-card p, .project-card li {
   font-size: 1rem;
-  color: #f2e9e4;
+  color: var(--text);
   font-family: 'VT323', 'Press Start 2P', cursive, monospace;
   line-height: 1.4;
 }
@@ -219,10 +277,10 @@ button:hover, .pixel-btn:hover {
 }
 
 .project-card img {
-  border: 2px solid #9a8c98;
-  box-shadow: 2px 2px 0 #4a4e69;
+  border: 2px solid var(--secondary);
+  box-shadow: 2px 2px 0 var(--surface);
   image-rendering: pixelated;
-  background: #4a4e69;
+  background: var(--surface);
   max-width: 100%;
   height: auto;
 }
@@ -232,9 +290,9 @@ button:hover, .pixel-btn:hover {
   height: 200px;
   max-width: 100%;
   border-radius: 4px;
-  border: 2px solid #c9ada7;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15), 1px 1px 0 #9a8c98;
-  background: #22223b;
+  border: 2px solid var(--primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15), 1px 1px 0 var(--border);
+  background: var(--bg-main);
 }
 
 /* Skills section */
@@ -247,18 +305,18 @@ button:hover, .pixel-btn:hover {
 }
 
 .skills-category {
-  background: #2a2a40;
-  border: 2px solid #9a8c98;
+  background: var(--surface);
+  border: 2px solid var(--secondary);
   border-radius: 8px;
   padding: 16px 12px;
-  box-shadow: 2px 2px 0 #c9ada7;
+  box-shadow: 2px 2px 0 var(--primary);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .skills-category h2 {
-  color: #c9ada7;
+  color: var(--secondary);
   font-family: 'Press Start 2P', 'VT323', cursive, monospace;
   font-size: 1rem;
   margin-bottom: 12px;
@@ -272,23 +330,23 @@ button:hover, .pixel-btn:hover {
 }
 
 .skill-badge {
-  background: #4a4e69;
-  color: #f2e9e4;
-  border: 2px solid #c9ada7;
+  background: var(--bg-main);
+  color: var(--primary);
+  border: 2px solid var(--highlight);
   border-radius: 4px;
   font-family: 'VT323', 'Press Start 2P', cursive, monospace;
   font-size: 0.9rem;
   padding: 4px 10px;
-  box-shadow: 1px 1px 0 #9a8c98;
+  box-shadow: 1px 1px 0 var(--border);
   margin-bottom: 4px;
   letter-spacing: 1px;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .skill-badge:hover {
-  background: #c9ada7;
-  color: #22223b;
-  box-shadow: 1px 1px 0 #4a4e69;
+  background: var(--highlight);
+  color: var(--bg-main);
+  box-shadow: 1px 1px 0 var(--surface);
 }
 
 /* Tech badges in project cards */
@@ -300,22 +358,22 @@ button:hover, .pixel-btn:hover {
 }
 
 .tech-badge {
-  background: #4a4e69;
-  color: #f2e9e4;
-  border: 2px solid #c9ada7;
+  background: var(--surface);
+  color: var(--secondary);
+  border: 2px solid var(--primary);
   border-radius: 4px;
   font-family: 'VT323', 'Press Start 2P', cursive, monospace;
   font-size: 0.8rem;
   padding: 2px 8px;
-  box-shadow: 1px 1px 0 #9a8c98;
+  box-shadow: 1px 1px 0 var(--border);
   letter-spacing: 1px;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .tech-badge:hover {
-  background: #c9ada7;
-  color: #22223b;
-  box-shadow: 1px 1px 0 #4a4e69;
+  background: var(--primary);
+  color: var(--bg-main);
+  box-shadow: 1px 1px 0 var(--surface);
 }
 
 /* About section */
@@ -323,9 +381,9 @@ button:hover, .pixel-btn:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #4a4e69 60%, #c9ada7 100%);
-  border: 2px solid #9a8c98;
-  box-shadow: 4px 4px 0 #9a8c98;
+  background: linear-gradient(135deg, var(--surface) 60%, var(--accent) 100%);
+  border: 2px solid var(--primary);
+  box-shadow: 4px 4px 0 var(--border);
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
@@ -349,18 +407,18 @@ button:hover, .pixel-btn:hover {
 
 .about-text {
   width: 100%;
-  background: #22223b;
-  border: 2px solid #c9ada7;
+  background: var(--bg-main);
+  border: 2px solid var(--primary);
   border-radius: 6px;
   padding: 16px;
-  color: #f2e9e4;
+  color: var(--text);
   font-family: 'VT323', 'Press Start 2P', cursive, monospace;
   font-size: 1rem;
-  box-shadow: 2px 2px 0 #9a8c98;
+  box-shadow: 2px 2px 0 var(--border);
 }
 
 .about-text h2 {
-  color: #c9ada7;
+  color: var(--secondary);
   font-family: 'Press Start 2P', 'VT323', cursive, monospace;
   margin-top: 16px;
   margin-bottom: 8px;
@@ -373,7 +431,7 @@ button:hover, .pixel-btn:hover {
 }
 
 .about-text a {
-  color: #c9ada7;
+  color: var(--accent);
   text-decoration: underline;
 }
 
@@ -381,10 +439,10 @@ button:hover, .pixel-btn:hover {
 .contact-container {
   max-width: 100%;
   margin: 16px auto;
-  background: linear-gradient(135deg, #4a4e69 60%, #c9ada7 100%);
-  border: 2px solid #9a8c98;
+  background: linear-gradient(135deg, var(--surface) 60%, var(--accent) 100%);
+  border: 2px solid var(--primary);
   border-radius: 8px;
-  box-shadow: 4px 4px 0 #9a8c98;
+  box-shadow: 4px 4px 0 var(--border);
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -400,26 +458,26 @@ button:hover, .pixel-btn:hover {
 .contact-info li {
   font-size: 1rem;
   margin-bottom: 8px;
-  color: #f2e9e4;
+  color: var(--text);
 }
 
 .contact-info a {
-  color: #c9ada7;
+  color: var(--secondary);
   text-decoration: underline;
 }
 
 .contact-form {
   width: 100%;
-  background: #22223b;
-  border: 2px solid #c9ada7;
+  background: var(--bg-main);
+  border: 2px solid var(--primary);
   border-radius: 6px;
   padding: 16px;
-  box-shadow: 2px 2px 0 #9a8c98;
+  box-shadow: 2px 2px 0 var(--border);
   margin-top: 8px;
 }
 
 .contact-form h2 {
-  color: #c9ada7;
+  color: var(--secondary);
   font-family: 'Press Start 2P', 'VT323', cursive, monospace;
   font-size: 1rem;
   margin-bottom: 12px;
@@ -428,7 +486,7 @@ button:hover, .pixel-btn:hover {
 .contact-form label {
   display: block;
   margin-bottom: 4px;
-  color: #f2e9e4;
+  color: var(--text);
   font-family: 'VT323', 'Press Start 2P', cursive, monospace;
   font-size: 0.9rem;
 }
@@ -438,28 +496,28 @@ button:hover, .pixel-btn:hover {
   width: 100%;
   padding: 8px 10px;
   margin-bottom: 12px;
-  border: 2px solid #9a8c98;
+  border: 2px solid var(--border);
   border-radius: 4px;
-  background: #4a4e69;
-  color: #f2e9e4;
+  background: var(--surface);
+  color: var(--text);
   font-family: 'VT323', 'Press Start 2P', cursive, monospace;
   font-size: 0.9rem;
-  box-shadow: 1px 1px 0 #c9ada7;
+  box-shadow: 1px 1px 0 var(--primary);
   outline: none;
   resize: vertical;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #c9ada7;
-  background: #2a2a40;
+  border-color: var(--primary);
+  background: var(--bg-main);
 }
 
 /* Card variants */
 .about-card, .skills-card, .contact-card {
-  background: linear-gradient(135deg, #22223b 60%, #c9ada7 100%);
-  border: 2px solid #9a8c98;
-  box-shadow: 3px 3px 0 #9a8c98;
+  background: linear-gradient(135deg, var(--bg-main) 60%, var(--accent) 100%);
+  border: 2px solid var(--primary);
+  box-shadow: 3px 3px 0 var(--border);
   margin: 16px auto;
   padding: 16px;
   max-width: 100%;
@@ -472,14 +530,14 @@ button:hover, .pixel-btn:hover {
 }
 
 .about-card:hover, .skills-card:hover, .contact-card:hover {
-  box-shadow: 0 0 16px 4px #c9ada7, 6px 6px 0 #9a8c98;
-  border-color: #f2e9e4;
+  box-shadow: 0 0 16px 4px var(--accent), 6px 6px 0 var(--border);
+  border-color: var(--highlight);
   z-index: 2;
 }
 
 .about-card:active, .skills-card:active, .contact-card:active {
   transform: scale(0.98);
-  box-shadow: 0 0 4px 1px #c9ada7, 2px 2px 0 #9a8c98;
+  box-shadow: 0 0 4px 1px var(--accent), 2px 2px 0 var(--border);
 }
 
 /* Hide profile pic elements */
@@ -493,13 +551,13 @@ button:hover, .pixel-btn:hover {
 }
 
 .skills-section {
-  background: #2a2a40;
-  border: 2px dashed #c9ada7;
+  background: var(--surface);
+  border: 2px dashed var(--secondary);
   border-radius: 6px;
   padding: 12px;
   margin-bottom: 16px;
   margin-top: 8px;
-  box-shadow: 1px 1px 0 #9a8c98;
+  box-shadow: 1px 1px 0 var(--border);
 }
 
 .skills-section ul {
@@ -511,11 +569,11 @@ button:hover, .pixel-btn:hover {
 .skills-section li {
   margin-bottom: 8px;
   font-size: 0.9rem;
-  color: #f2e9e4;
+  color: var(--text);
 }
 
 .skills-section strong {
-  color: #c9ada7;
+  color: var(--primary);
   font-family: 'Press Start 2P', 'VT323', cursive, monospace;
   letter-spacing: 1px;
 }
@@ -529,8 +587,8 @@ button:hover, .pixel-btn:hover {
   .content {
     padding: 24px;
     width: 90%;
-    border: 3px solid #9a8c98;
-    box-shadow: 6px 6px 0 #9a8c98;
+    border: 3px solid var(--primary);
+    box-shadow: 6px 6px 0 var(--border);
   }
   
   .navbar {
@@ -539,7 +597,7 @@ button:hover, .pixel-btn:hover {
   
   .navbar-logo {
     margin: 12px 24px;
-    border-right: 2px dashed #c9ada7;
+    border-right: 2px dashed var(--secondary);
     border-bottom: none;
     padding-right: 24px;
     padding-bottom: 0;
@@ -554,7 +612,7 @@ button:hover, .pixel-btn:hover {
   .navbar a {
     font-size: 0.9rem;
     padding: 10px 16px;
-    box-shadow: 3px 3px 0 #9a8c98;
+    box-shadow: 3px 3px 0 var(--border);
   }
   
   .project-video iframe {
@@ -606,8 +664,8 @@ button:hover, .pixel-btn:hover {
   .project-card {
     padding: 24px;
     margin: 24px auto;
-    border: 3px solid #9a8c98;
-    box-shadow: 4px 4px 0 #9a8c98;
+    border: 3px solid var(--primary);
+    box-shadow: 4px 4px 0 var(--border);
   }
   
   .project-card h2 {
@@ -645,8 +703,8 @@ button:hover, .pixel-btn:hover {
 @media (min-width: 992px) {
   .content {
     width: 80%;
-    border: 4px solid #9a8c98;
-    box-shadow: 8px 8px 0 #9a8c98;
+    border: 4px solid var(--primary);
+    box-shadow: 8px 8px 0 var(--border);
   }
   
   .navbar {
@@ -660,7 +718,7 @@ button:hover, .pixel-btn:hover {
   .navbar a {
     font-size: 1.2rem;
     padding: 14px 24px;
-    box-shadow: 4px 4px 0 #9a8c98;
+    box-shadow: 4px 4px 0 var(--border);
   }
   
   .navbar-avatar {
@@ -669,7 +727,7 @@ button:hover, .pixel-btn:hover {
   }
   
   .project-card:hover {
-    box-shadow: 0 0 24px 6px #c9ada7, 8px 8px 0 #9a8c98;
+    box-shadow: 0 0 24px 6px var(--accent), 8px 8px 0 var(--border);
     transform: translateY(-6px) scale(1.02);
   }
   
