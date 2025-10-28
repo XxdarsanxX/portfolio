@@ -2,14 +2,53 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 
 function Projects() {
-  const projects = [
+const projects = [
+  {
+    title: 'Horror Estate',
+    videoUrl: 'https://www.youtube.com/embed/9k37Mrr_g50',
+    imageUrl: 'https://via.placeholder.com/320x180.png?text=Vehicle',
+    description:
+      'This game was made for the Scream Game Jam 2025 which we were required to make in one week. The theme was "Horror". The game takes place in a haunted apartment as a journalist looks for evidence of supernatural activity while avoiding a ghost that roams the apartment.',
+    playUrl: 'https://moeymakes.itch.io/horrorestate',
+    techStack: ['Unity', 'C#', '3D'],
+    contributions: [
+      'Co-developed all major gameplay systems, including ghost events, haunted furniture interactions, and overall game flow.',
+      'Designed and implemented a modular audio system to manage ambient sounds, ghost cues, and jump scares.',
+      'Created light and visual effects, including flickering lights and co-developed atmosphere-driven post-processing.',
+      'Helped choreograph and script jump scares, balancing timing and sound to enhance player tension.',
+      'Built reusable and modular gameplay components to simplify event creation and improve development efficiency.',
+      'Contributed to testing, debugging, and balancing to refine pacing and ensure a consistent horror experience.',
+      'Created some artwork and environmental elements for the haunted apartment.'
+    ]
+  },
+    {
+  title: 'Modular AI Agent Framework for Game Engines',
+  videoUrl: '',
+  imageUrl: 'https://via.placeholder.com/320x180.png?text=AI+Framework',
+  description: "A C++ framework enabling game AI agents to switch between decision-making paradigms (FSM, Utility AI, Behavior Trees, GOAP) without rewriting behaviors. Built as a Master's dissertation to solve paradigm isolation in game AI, validated with 4000 concurrent agents and Unity integration.",
+  playUrl: 'https://github.com/XxdarsanxX/Modular-Ai-Agents-Final-Dissertation',
+  techStack: ['C++', 'Unity', 'C#', 'Google Test'],
+  contributions: [
+    'Adapter Pattern for AI Paradigms: Translation layer converting universal role definitions into engine-specific configurations (FSM states, BT nodes, Utility considerations, GOAP goals/actions)',
+    'Behavior Abstraction Layer: Decoupled behavior definitions from engine implementations using a component-based architecture for reusable action primitives',
+    'Created a Role Creation System: That allows defining agent roles with goals, actions, and decision logic independent of the underlying paradigm',
+    'Enhanced Decision Engine Implementations: FSM with weighted transitions, Utility AI with score caching, Behavior Trees with environmental adaptation, GOAP with reactive planning',
+    'Component-Based Action System: Modular behavior construction from atomic primitives enabling flexible composition without engine-specific code',
+    'Universal Action Execution Pipeline: Engine-agnostic executors with viability evaluation, environmental perception, and resource validation across all paradigms',
+    'Resource Management Framework: Automatic tracking, critical state detection, dynamic importance weighting, and decay/regeneration systems',
+    'Environmental Awareness Integration: Perception-based action evaluation with triggers, responses, and context-sensitive scoring',
+    'Cross-Platform DLL Interface: C++ to Unity bridge enabling real-time agent observation, decision monitoring, and bidirectional communication',
+    'Comprehensive Testing: 170+ Google Test validations, systematic paradigm comparison infrastructure, stress testing with 4000 agents',
+    'Successfully validated 36 role-engine combinations with consistent cross-platform behaviors and sub-200ms engine switching'
+  ]
+},
     {
       title: 'Audience Controlled Vehicle',
       videoUrl: 'https://www.youtube.com/embed/oJ0hzasWpqg',
       imageUrl: 'https://via.placeholder.com/320x180.png?text=Vehicle',
       description: 'An interactive multi-game experience where groups control gameplay using colored paddles and a custom camera system. Built for the University of Hull to inspire students and showcase computer science, it features two games and two activities—all powered by real-time computer vision and group input.',
       playUrl: '',
-      techStack: ['Unity', 'C#', 'Python', 'OpenCV', 'WebSocket', 'UI'],
+      techStack: ['Unity', 'C#', 'Python', 'OpenCV', 'WebSocket', 'UI', '3D', '2D'],
       contributions: [
         'Developed and optimized a camera controller using Python and OpenCV for paddle input and color detection',
         'Integrated real-time communication between Unity and Python for gameplay calibration and feedback',
@@ -28,7 +67,7 @@ function Projects() {
       imageUrl: '',
       description: 'A high-performance, real-time physics simulation engine built from scratch in C++ using DirectX 12 and DirectXMath. Supports advanced collision handling, full 3D rigid body dynamics, and distributed simulation with up to 4 peers.',
       playUrl: 'https://github.com/XxdarsanxX/sim_Final_Lab/',
-      techStack: ['C++', 'DirectX 12', 'DirectXMath', 'WinSock2', 'ImGui'],
+      techStack: ['C++', 'DirectX 12', 'DirectXMath', 'WinSock2', 'ImGui', '3D'],
       keyFeatures: [
         'Multi-threaded Physics Simulation',
         'SAT-Based Collision Detection with realistic Response',
