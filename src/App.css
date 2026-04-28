@@ -296,6 +296,10 @@ button:hover, .pixel-btn:hover {
 }
 
 /* Skills section */
+.skills-page-container {
+  width: 100%;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr;
