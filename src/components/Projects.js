@@ -8,7 +8,7 @@ const projects = [
     videoUrl: 'https://www.youtube.com/embed/bQCsk1ivLbo',
     imageUrl: 'https://via.placeholder.com/320x180.png?text=Dead+Drop+Courier',
     description: 'A single-player parkour platformer featuring a hand-crafted cyberpunk city. Make deliveries across rooftops, unlock progressive abilities, and master advanced movement mechanics while battling hostile drones and robots.',
-    playUrl: '',
+    playUrl: 'https://xxdarsanxx.itch.io/dead-drop-courier',
     techStack: ['Unity', 'C#', 'ProBuilder', '3D'],
     keyFeatures: [
       'Hand-crafted cyberpunk city with massive vertical exploration',
