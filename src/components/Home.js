@@ -21,7 +21,7 @@ function Home() {
             <h1>About Me</h1>
             <p><strong>Hi, I'm Darsan Jalal!</strong></p>
             <p>
-              Dedicated programmer with over 8 years of experience in studying and working with computer technologies. With a proven passion for Games and Programming by jumping at any chance I got, I participated in numerous Games and Game Development projects throughout my education and career. Currently, I am seeking to show my skills and my abilities on a project where I can push and improve myself.
+              Dedicated programmer with over 10 years of experience studying and working with computer technologies and game development. I hold a Master's degree in Game Programming and have demonstrated a proven passion for games and programming by actively pursuing opportunities throughout my education and career. I have participated in numerous game development projects and constantly seek to showcase my skills on projects where I can push boundaries and improve myself.
             </p>
             <h2>Skills & Tools</h2>
             <p>I have hands-on experience with a wide range of programming languages, game engines, and creative tools—including Unity, Godot, C#, C++, Python, and pixel art—enabling me to design, develop, and deliver engaging game experiences from concept to completion.</p>
