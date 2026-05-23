@@ -10,7 +10,7 @@ function Home() {
               width="720"
               height="405"
               
-              src="https://www.youtube.com/embed/QHdjfAy8KD8?autoplay=1&mute=1&controls=0&loop=1&playlist=QHdjfAy8KD8"
+              src="https://www.youtube.com/embed/VU-ajIQpcEc?autoplay=1&mute=1&controls=0&loop=1&playlist=VU-ajIQpcEc"
               title="Compilation of My Work"
               frameBorder="0"
               allow="autoplay; encrypted-media"
