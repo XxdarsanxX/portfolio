@@ -3,7 +3,22 @@ import ProjectCard from './ProjectCard';
 
 function Projects() {
 const projects = [
-  {
+    {
+    title: 'Arcade Game',
+    imageUrl: 'https://www.vecteezy.com/photo/51238011-a-vibrant-nostalgic-retro-arcade-filled-with-classic-games-under-neon-lights',
+    description: 'small retro arcade games made using reactand typescript it fetures two games a falling game where you cannot let the objects get past you and a wakamo style game where the room gets flooded.',
+    playUrl: 'https://arcade-web-games.vercel.app/',
+    techStack: ['typescript', 'react', 'pixieJS', '2D'],
+    keyFeatures: [
+      'arcade',
+      '2D web games',
+      'simple Water physics',
+      'collision detection',
+    ],
+    contributions: [
+      'Solo developer'
+    ]
+  },{
     title: 'Dead Drop Courier',
     videoUrl: 'https://www.youtube.com/embed/bQCsk1ivLbo',
     imageUrl: 'https://via.placeholder.com/320x180.png?text=Dead+Drop+Courier',
