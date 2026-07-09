@@ -3,22 +3,7 @@ import ProjectCard from './ProjectCard';
 
 function Projects() {
 const projects = [
-    {
-    title: 'Arcade Game',
-    imageUrl: 'https://www.vecteezy.com/photo/51238011-a-vibrant-nostalgic-retro-arcade-filled-with-classic-games-under-neon-lights',
-    description: 'small retro arcade games made using reactand typescript it fetures two games a falling game where you cannot let the objects get past you and a wakamo style game where the room gets flooded.',
-    playUrl: 'https://arcade-web-games.vercel.app/',
-    techStack: ['typescript', 'react', 'pixieJS', '2D'],
-    keyFeatures: [
-      'arcade',
-      '2D web games',
-      'simple Water physics',
-      'collision detection',
-    ],
-    contributions: [
-      'Solo developer'
-    ]
-  },{
+{
     title: 'Dead Drop Courier',
     videoUrl: 'https://www.youtube.com/embed/bQCsk1ivLbo',
     imageUrl: 'https://via.placeholder.com/320x180.png?text=Dead+Drop+Courier',
@@ -63,6 +48,16 @@ const projects = [
     ]
   },
     {
+    title: 'Florist Robot',
+    imageUrl: 'https://via.placeholder.com/320x180.png?text=Vehicle',
+    description:'you are a modern florist robot that sorts mutated flowers from normal ones. while you are breaking down and avoiding a pesky bird that steals your flowers and poops on you. there are different upgrades you can get from your upgrade station. \n this game was made for the Godot wild Jam #94',
+    playUrl: 'https://xxdarsanxx.itch.io/florist-robot',
+    techStack: ['Godot', 'GDScript', '2D'],
+    contributions: [
+     'Solo developer: Complete design and implementation',
+    ]
+  },
+    {
   title: 'Modular AI Agent Framework for Game Engines',
   videoUrl: '',
   imageUrl: 'https://via.placeholder.com/320x180.png?text=AI+Framework',
@@ -101,7 +96,22 @@ const projects = [
         'Produced activity and component diagrams for camera controller and gameplay systems',
         'Supported team with Git, Unity, and technical troubleshooting'
       ]
-    },
+    },   
+   {
+    title: 'Arcade Game',
+    description: 'small retro arcade games made using reactand typescript it fetures two games a falling game where you cannot let the objects get past you and a wakamo style game where the room gets flooded.',
+    playUrl: 'https://arcade-web-games.vercel.app/',
+    techStack: ['typescript', 'react', 'pixieJS', '2D'],
+    keyFeatures: [
+      'arcade',
+      '2D web games',
+      'simple Water physics',
+      'collision detection',
+    ],
+    contributions: [
+      'Solo developer'
+    ]
+  },
     {
       title: 'Physics Simulation Engine',
       videoUrl: 'https://www.youtube.com/embed/LdzJch3SuWQ',
